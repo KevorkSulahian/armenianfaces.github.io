@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Armos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+            <h1 class="mainer">armo lito </h1>
+            <h3 class="mainer">created by: blah blah</h3>  
+    </div>
+
+    <div>
+        <h4>why we did it</h4>
+        <p>for grades</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+   <a href="Baronian.html" target="_blank"><img src="img/1.png" class="imgs"> </a>
+<!--  <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+   <a href="charents.html" target="_blank"><img src="img/2.png" class="imgs"> </a>
+<!--  <div class="text">Caption Text</div> -->
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+   <a href="Saroyan.html" target="_blank"><img src="img/3.png" class="imgs"> </a>
+<!--  <div class="text">Caption Text</div> -->
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+   <a href="Siamanto.html" target="_blank"><img src="img/4.png" class="imgs"> </a>
+<!--  <div class="text">Caption Text</div> -->
+
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+   <a href="Deryan.html" target="_blank"><img src="img/5.png" class="imgs"> </a>
+<!--  <div class="text">Caption Text</div> -->
+
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+   <a href="Tumanyan.html" target="_blank"><img src="img/6.png" class="imgs"> </a>
+<!--  <div class="text">Caption Text</div> -->
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
