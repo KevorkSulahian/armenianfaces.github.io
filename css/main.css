@@ -2,6 +2,7 @@
 * {box-sizing:border-box}
 body {font-family: impact,sans-serif;
     background-image: url('../img/try1.jpg');
+    color: white;
 
 }
 .mySlides {display:none}
